@@ -1,0 +1,110 @@
+/* Custom Properties */
+
+:root {
+    /* Colors */
+    --clr-red: rgb(255, 36, 66);
+    --clr-yellow: rgb(255, 36, 66);
+    --clr-beige: rgb(255, 237, 218);
+    --clr-blue: rgb(61, 178, 255);
+    --clr-black: rgb(15, 14, 14)
+
+    /* Font Sizes */
+    --fs-900: 9.375rem;
+    --fs-800: 6.25rem;
+    --fs-700: 3.5rem;
+    --fs-600: 2rem;
+    --fs-500: 1.75rem;
+    --fs-400: 1.125rem;
+    --fs-300: 1rem;
+    --fs-200: 0.875rem;
+
+    /* Font Families */
+    --ff-mono: 'Fira Mono', monospace;
+
+}
+
+/* Reset */
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
+/* Setup the body */
+
+body {
+    font-family: var(--ff-mono);
+    font-size: var(--fs-400);
+    background-color: var(--clr-beige);
+    color: var(--clr-black);
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Make images easy to work with */
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Main CSS Styles */
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+header div {
+    display: grid;
+    place-items: center;
+}
+
+header p {
+    display: grid;
+    place-items: center;
+}
+
+/* Main */
+
+main {
+    display: grid;
+    place-items: center;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 400px;
+}
